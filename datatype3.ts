@@ -1,0 +1,25 @@
+class Student {
+    name: string;
+    rollNo: number;
+    branch: string;
+
+    constructor(name: string, rollNo: number, branch: string) {
+        this.name = name;
+        this.rollNo = rollNo;
+        this.branch = branch;
+    }
+
+    displayDetails(): void {
+        console.log("Student Name : " + this.name);
+        console.log("Roll Number  : " + this.rollNo);
+        console.log("Branch       : " + this.branch);
+    }
+}
+
+// Create object
+let student1 = new Student("Sharanya", 101, "AI & DS");
+
+// Display details
+student1.displayDetails();
+
+export {};
